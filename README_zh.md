@@ -12,6 +12,10 @@
 - 示例如何对 IndexTTS 的文本 Tokenizer和自回归模型部分（GPT2）进行微调
 - 支持在文本中插入如 `<GIGGLES>` 等特殊标签，以生成对应的笑声或其他音效。
 
+### 微调数据集
+
+[🤗 MrDragonFox/Elise](https://huggingface.co/datasets/MrDragonFox/Elise)（modelscope 的镜像： https://www.modelscope.cn/datasets/RealmSky/Elise）
+
 ### 微调实验结果示例
 
 | 参考音频 | 文本 | 语音 |
@@ -41,8 +45,8 @@ flowchart TD
 
 ### 本项目微调的模块
 
-- **BPE**: 实际为 `sentencepiece`，本项目实现增加新的特殊标签，如 `<GIGGLES>`
-- **GPT2**: 自回归模型部分，使用 `peft` 库进行`LoRA`微调，支持生成带有特殊标签文本的语音 Latent
+- **BPE**: 实际为 `sentencepiece`，为它增加新的特殊标签 token，如 `<GIGGLES>` 具体过程请参见 [preprocess_mel_dataset.ipynb](preprocess_mel_dataset.ipynb) 笔记本。
+- **GPT2**: 自回归模型部分，使用 [🤗 peft](https://huggingface.co/docs/peft/v0.15.0/en/index) 库进行`LoRA`微调，支持生成带有特殊标签文本的语音 Latent，具体过程请参见 [fine_tune_indextts.ipynb](fine_tune_indextts.ipynb) 笔记本。
 
 
 ## Disclaimer

@@ -9,6 +9,11 @@ This project is a demonstration of fine-tuning [IndexTTS](https://github.com/ind
 - Show you how to fine-tune IndexTTS's text Tokenizer (BPE) and AR part (GPT2).
 - Support for addtional special tags like `<GIGGLES>` in text to generate laughter.
 
+### Fine-tuning Dataset
+
+[🤗 MrDragonFox/Elise](https://huggingface.co/datasets/MrDragonFox/Elise) ([Modelscope mirror](https://www.modelscope.cn/datasets/RealmSky/Elise))
+
+
 ### Fine-tuning Experiment Results Example
 
 | Reference Audio | Text | Synthesized Speech |
@@ -38,8 +43,8 @@ flowchart TD
 
 ### Modules Fine-tuned in This Project
 
-- **BPE**: Actually `sentencepiece`, this project implements adding new special tags such as `<GIGGLES>`
-- **GPT2**: The autoregressive model part, using the `peft` library for `LoRA` fine-tuning, supporting the generation of speech latents for text with special tags
+- **BPE**: Actually `sentencepiece`, this project show you how to adding new special tags such as `<GIGGLES>` to the text Tokenizer. See the [preprocess_mel_dataset.ipynb](preprocess_mel_dataset.ipynb) notebook for details.
+- **GPT2**: The autoregressive model part, using the [🤗 peft](https://huggingface.co/docs/peft/v0.15.0/en/index) library for `LoRA` fine-tuning, supporting the generation of speech latents for text with special tags. See the [fine_tune_indextts.ipynb](fine_tune_indextts.ipynb) notebook for details.
 
 ## Disclaimer
 
