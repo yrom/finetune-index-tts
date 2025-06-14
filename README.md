@@ -38,7 +38,7 @@ flowchart TD
     (Generator)"]]
     A --> SP[[*ECAPA-TDNN*]]--> S(Speaker Embedding)
     S --> V
-    V -->|Synthesis| PCM("Waveform (PCM)") --> W("Synthesised Speech")
+    V -->|Synthesis| PCM("Waveform (PCM)") --> W("Synthesized Speech")
 ```
 
 ### Modules Fine-tuned in This Project
