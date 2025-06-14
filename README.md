@@ -43,8 +43,10 @@ flowchart TD
 
 ### Modules Fine-tuned in This Project
 
-- **BPE**: Actually `sentencepiece`, this project show you how to adding new special tags such as `<GIGGLES>` to the text Tokenizer. See the [preprocess_mel_dataset.ipynb](preprocess_mel_dataset.ipynb) notebook for details.
-- **GPT2**: The autoregressive model part, using the [🤗 peft](https://huggingface.co/docs/peft/v0.15.0/en/index) library for `LoRA` fine-tuning, supporting the generation of speech latents for text with special tags. See the [fine_tune_indextts.ipynb](fine_tune_indextts.ipynb) notebook for details.
+- **BPE**: Actually `sentencepiece`, this project show you how to adding new special tags such as `<GIGGLES>` to the text Tokenizer. See the [preprocess_mel_dataset.ipynb](preprocess_mel_dataset.ipynb) notebook for details. [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/yrom/finetune-index-tts/blob/main/preprocess_mel_dataset.ipynb)
+- **GPT2**: The autoregressive model part, using the [🤗 peft](https://huggingface.co/docs/peft/v0.15.0/en/index) library for `LoRA` fine-tuning, supporting the generation of speech latents for text with special tags. See the [fine_tune_indextts.ipynb](fine_tune_indextts.ipynb) notebook for details.  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/yrom/finetune-index-tts/blob/main/fine_tune_indextts.ipynb)
+
+
 
 ## Disclaimer
 
