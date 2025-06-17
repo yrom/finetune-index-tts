@@ -5,7 +5,8 @@
 本项目是个示例项目，旨在对 [IndexTTS](https://github.com/index-tts/index-tts) 进行微调，使其能够识别并生成带有特殊标签（如 `<GIGGLES>`）的语音音频，实现如笑声等情感或非文本元素的合成。
 
 > [!NOTE]
-> 本项目仅为示例，实际应用中请根据具体需求进行调整和优化。
+> 本项目仅为示例，实际应用中请根据具体需求进行调整和优化。  
+> 微调详细思路可以查看我的blog：[《微调IndexTTS以输出可控情绪的语言音频》](https://yrom.net/blog/2025/06/15/finetune-indextts-to-generate-controllable-emotions-speech/)
 
 ## 项目目标
 
