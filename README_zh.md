@@ -15,7 +15,7 @@
 
 ### 微调数据集
 
-[🤗 MrDragonFox/Elise](https://huggingface.co/datasets/MrDragonFox/Elise)（modelscope 的镜像： https://www.modelscope.cn/datasets/RealmSky/Elise）
+[🤗 MrDragonFox/Elise](https://huggingface.co/datasets/MrDragonFox/Elise)（modelscope 的[镜像](https://www.modelscope.cn/datasets/RealmSky/Elise) ）
 
 ### 微调实验结果示例
 
